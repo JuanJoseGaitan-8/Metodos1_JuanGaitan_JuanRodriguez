@@ -1,0 +1,16 @@
+#!/bin/bash
+
+pass=0
+
+function checkvalue() {
+    if [[ $1 = 1 || $1 = 0 ]]; then
+        pass=1
+    else
+        echo "El valor debe ser 0 o 1. Intente de nuevo"
+    fi
+}
+
+while [ $pass -eq 0 ]; do
+    read -p "Ingrese un valor (0 o 1): " value
+    checkvalue $value
+done
