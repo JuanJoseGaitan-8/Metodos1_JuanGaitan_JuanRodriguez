@@ -1,6 +1,11 @@
 #!/bin/bash
 
-while IFS= read -r line
+typeset -i i=0
+
+for n in $(cat lista.dat)
 do
-  echo "$line"
-done < .git
+	Path[$i]=$n
+	i=$i+1
+done
+
+echo ${Path[2]}  #Tercer elemento
