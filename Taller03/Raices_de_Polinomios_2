@@ -2,4 +2,4 @@
 
 Se puede calcular el error relativo en cada iteración del metodo, de esta manera se puede elegir una tolerancia para la cual cuando el error relativo llegue a ese valor de tolerancia, se detenga el metodo, es decir, se puede ajustar la precisión para estimar las raices.
 
-Adicionalmente, todo lo mencionado anteriormente de que se utilizo la derivada central y definir un h tambien contribuye con la precision ya que son maneras en las que se esta reduciendo el error. 
+Adicionalmente, todo lo mencionado anteriormente en el punto 1 de que se utilizo la derivada central, al cual se el puede definir un h también contribuye con la precisión, ya que son maneras en las que se esta reduciendo el error.
