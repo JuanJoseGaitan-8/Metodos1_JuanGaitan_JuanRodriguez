@@ -1,0 +1,8 @@
+1) ¿De qué tipo es el error asociado a la estimación de raıces usando el método de Newton-Raphson?
+
+
+El metodo de newton-rapshon es una aproximación a través de una expansión de Taylor, por lo cual el metodo tiene asociado un eror de truncamiento. Al usa la derivada central, que a diferencia de la derivada progresiva o regresiva, se tiene un error de truncamiento de orden O(h^2) en la estimacion, esto quiere decir que a diferencia de las otras derivadas el error de truncamiento va a ser menor y va a tener mayor orden de precisión.
+
+Al definir h = 1 x^10-6 con la funcion implementada que retorna la derivada central de los polinomios, lo que se hace es estimar el valor a un error mínimo, ya que despues de este valor el porcentaje de error aumenta como tambien puede aumentar que todo el metodo falle. Entre mas pequeño sea el valor de h mayor precision se va a obtener. 
+
+Los errores de truncamiento se deben a la omisión de terminos en una serie que tiene un número infinito de terminos. Por lo que va a llegar un momento en el que el kernel del computador ya no me va entregar el resultado real, sino una aproximación que dependera del valor h que le asigne a la función. 
